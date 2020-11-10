@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        button
+        {
+            width:100px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>Calculator </h1>
+    <input type="text" id="input01" size="26">
+    <input type="text" id="input02" size="26"><br><br>
+    <button type="button" onclick="addition()">+</button>
+    <button type="button" onclick="substraction()">-</button>
+    <button type="button" onclick="multiplication()">*</button>
+    <button type="button" onclick="division()">/</button>
+    <p>Result : </p>
+    <p id="output"></p>
+</div>
+<script>
+    function addition()
+    {
+        let a=document.getElementById("input01").value;
+        let b=document.getElementById("input02").value;
+        document.getElementById("output").innerHTML=a+b;
+    }
+    function substraction()
+    {
+        let a=document.getElementById("input01").value;
+        let b=document.getElementById("input02").value;
+        document.getElementById("output").innerHTML=a-b;
+    }
+    function multiplication()
+    {
+        let a=document.getElementById("input01").value;
+        let b=document.getElementById("input02").value;
+        document.getElementById("output").innerHTML=a*b;
+    }
+    function division()
+    {
+        let a=document.getElementById("input01").value;
+        let b=document.getElementById("input02").value;
+        document.getElementById("output").innerHTML=a/b;
+    }
+</script>
+</body>
+</html>
